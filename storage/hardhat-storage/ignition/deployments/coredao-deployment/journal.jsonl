@@ -1,5 +1,0 @@
-
-{"chainId":1114,"type":"DEPLOYMENT_INITIALIZE"}
-{"artifactId":"StorageModule#Storage","constructorArgs":[],"contractName":"Storage","dependencies":[],"from":"0xe2cd6bbad217c1495b023dba35b40236280dc356","futureId":"StorageModule#Storage","futureType":"NAMED_ARTIFACT_CONTRACT_DEPLOYMENT","libraries":{},"strategy":"basic","strategyConfig":{},"type":"DEPLOYMENT_EXECUTION_STATE_INITIALIZE","value":{"_kind":"bigint","value":"0"}}
-{"futureId":"StorageModule#Storage","networkInteraction":{"data":"0x6080604052348015600e575f80fd5b5060a58061001b5f395ff3fe6080604052348015600e575f80fd5b50600436106030575f3560e01c80632e64cec11460345780636057361d146048575b5f80fd5b5f5460405190815260200160405180910390f35b605760533660046059565b5f55565b005b5f602082840312156068575f80fd5b503591905056fea2646970667358221220e5d098fe80b4ebcd1eca7cd9a6ca42f28c81ecea626ec5ad8ec71727552e5edb64736f6c63430008140033","id":1,"type":"ONCHAIN_INTERACTION","value":{"_kind":"bigint","value":"0"}},"type":"NETWORK_INTERACTION_REQUEST"}
-{"futureId":"StorageModule#Storage","networkInteractionId":1,"nonce":0,"type":"TRANSACTION_PREPARE_SEND"}

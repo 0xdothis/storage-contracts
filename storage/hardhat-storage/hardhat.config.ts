@@ -3,40 +3,18 @@ import "@nomicfoundation/hardhat-toolbox";
 import path from "path";
 require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 
-const { PRIVATE_KEY, ETHERSCAN_API, SEPOLIA_RPC_URL, CORE_RPC_URL } =
-  process.env;
+const { PRIVATE_KEY, ETHERSCAN_API, SEPOLIA_RPC_URL, RPC_URL } = process.env;
 
 const config: HardhatUserConfig = {
-  solidity: {
-    compilers: [
-      {
-        version: "0.8.20",
-        settings: {
-          evmVersion: "shanghai",
-          optimizer: {
-            enabled: true,
-            runs: 200,
-          },
-        },
-      },
-    ],
-  },
-  paths: {
-    sources: "./contracts",
-    cache: "./cache",
-    artifacts: "./artifacts",
-  },
-  mocha: {
-    timeout: 20000,
-  },
+  solidity: "0.8.20",
   networks: {
     // sepolia: {
     //   url: SEPOLIA_RPC_URL,
     //   accounts: [`0x${PRIVATE_KEY}`],
     // },
     testnet: {
-      url: CORE_RPC_URL,
-      accounts: [`${PRIVATE_KEY}`],
+      url: RPC_URL,
+      accounts: [`0x${PRIVATE_KEY}`],
     },
   },
   etherscan: {
